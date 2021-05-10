@@ -3,6 +3,8 @@ import React from "react";
 import {makeStyles, Typography} from "@material-ui/core";
 import { Route, Switch } from 'react-router-dom';
 import {Contact} from "./Contact";
+import {History} from "./History";
+import {Event} from "./Event";
 
 const useStyle = makeStyles(theme => {
   return {
@@ -27,14 +29,12 @@ export const MainRoute: React.FC = () => {
       <Switch>
         <Route exact path={"/"} component={() => <Typography>Home</Typography>} />
         <Route path={"/contact"} component={Contact} />
-        <Route path={"/history"} component={() => <Typography>Contact</Typography>} />
-        <Route path={"/food/aperitize"} component={() => <Typography>Contact</Typography>} />
-        <Route path={"/food/dish"} component={() => <Typography>Contact</Typography>} />
-        <Route path={"/food/dessert"} component={() => <Typography>Contact</Typography>} />
-        <Route path={"/food/drink"} component={() => <Typography>Contact</Typography>} />
+        <Route path={"/history"} component={History} />
+        <Route path={"/food/restaurant"} component={() => <Typography>Contact</Typography>} />
+        <Route path={"/food/pizzeria"} component={() => <Typography>Contact</Typography>} />
         <Route path={"/brunch"} component={() => <Typography>Contact</Typography>} />
         <Route path={"/rooms"} component={() => <Typography>Contact</Typography>} />
-        <Route path={"/events"} component={() => <Typography>Contact</Typography>} />
+        <Route path={"/events"} component={Event} />
         <Route path={"/photos"} component={() => <Typography>Contact</Typography>} />
         <Route path={"/videos"} component={() => <Typography>Contact</Typography>} />
       </Switch>

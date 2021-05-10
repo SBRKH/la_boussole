@@ -1,9 +1,10 @@
 import React from "react";
 import {Button, Grid, makeStyles, Typography} from "@material-ui/core";
 import {Form} from "react-final-form";
-import {makeValidate, TextField} from 'mui-rff';
+import {makeValidate, TextField, DatePicker, TimePicker} from 'mui-rff';
 import i18n from "../i18n/i18nconfig";
 import * as Yup from 'yup';
+import DateFnsUtils from '@date-io/date-fns';
 
 const useStyle = makeStyles({
   title: {
@@ -23,10 +24,9 @@ const useStyle = makeStyles({
 const formValidatorSchema = Yup.object().shape({
   name: Yup.string().required(),
   email: Yup.string().email(),
-  content: Yup.string().required(),
 });
 
-export const Contact: React.FC = () => {
+export const Event: React.FC = () => {
   const classes = useStyle();
   const validate = makeValidate(formValidatorSchema);
 
@@ -36,9 +36,9 @@ export const Contact: React.FC = () => {
 
   return (
     <>
-      <Typography variant={"h2"} color={"primary"} className={classes.title}>{i18n.t('contact.title')}</Typography>
+      <Typography variant={"h2"} color={"primary"} className={classes.title}>{i18n.t('event.title')}</Typography>
       <Typography variant={"h2"} color={"secondary"} align={"right"}
-                  className={classes.title}>{i18n.t('contact.findUs')}</Typography>
+                  className={classes.title}>{i18n.t('event.findUs')}</Typography>
       <Grid container className={classes.test}>
         <Grid item xs={6}>
           <Form onSubmit={handleOnSubmit}
@@ -74,6 +74,30 @@ export const Contact: React.FC = () => {
                                    fullWidth={true}
                                    required={true}/>
                       </Grid>
+                      <Grid item xs={6}>
+                        <DatePicker
+                          label={"Date de réservation"}
+                          name={"date"}
+                          required={true}
+                          dateFunsUtils={DateFnsUtils}
+                          margin={"normal"}
+                          variant={"inline"}
+                          inputVariant={"outlined"}
+                          format={"dd MMM yyyy"}
+                        />
+                      </Grid>
+                      <Grid item xs={6}>
+                        <TimePicker
+                          label={"Heure de réservation"}
+                          name={"time"}
+                          required={true}
+                          dateFunsUtils={DateFnsUtils}
+                          margin={"normal"}
+                          variant={"inline"}
+                          inputVariant={"outlined"}
+                          format={"HH:mm"}
+                        />
+                      </Grid>
                       <Grid item xs={12}>
                         <TextField label={"Votre message"}
                                    name={"content"}
@@ -84,8 +108,7 @@ export const Contact: React.FC = () => {
                                      }
                                    }}
                                    multiline={true}
-                                   fullWidth={true}
-                                   required={true}/>
+                                   fullWidth={true}/>
                       </Grid>
                     </Grid>
                     <Grid container alignItems={"center"} justify={"center"} direction={"column"}

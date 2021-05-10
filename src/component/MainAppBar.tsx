@@ -63,20 +63,12 @@ export const MainAppBar: React.FC = () => {
     history.push("/history");
   }
 
-  function handleClickMenuAperitize() {
-    history.push("/food/aperitize");
+  function handleClickMenuRestaurant() {
+    history.push("/food/restaurant");
   }
 
-  function handleClickMenuDish() {
-    history.push("/food/dish");
-  }
-
-  function handleClickMenuDessert() {
-    history.push("/food/dessert");
-  }
-
-  function handleClickMenuDrink() {
-    history.push("/food/drink");
+  function handleClickMenuPizzeria() {
+    history.push("/food/pizzeria");
   }
 
   function handleClickBrunch() {
@@ -118,10 +110,8 @@ export const MainAppBar: React.FC = () => {
 
         <Button className={classes.buttonTitle} onClick={handleClickMenu}>{i18n.t('menu.menu')}</Button>
         <Menu anchorEl={seeMenu} keepMounted open={Boolean(seeMenu)} onClose={handleCloseMenu}>
-          <MenuItem  onClick={handleClickMenuAperitize}>{i18n.t('menu.aperitize')}</MenuItem>
-          <MenuItem onClick={handleClickMenuDish}>{i18n.t('menu.dish')}</MenuItem>
-          <MenuItem onClick={handleClickMenuDessert}>{i18n.t('menu.dessert')}</MenuItem>
-          <MenuItem onClick={handleClickMenuDrink}>{i18n.t('menu.drink')}</MenuItem>
+          <MenuItem  onClick={handleClickMenuRestaurant}>{i18n.t('menu.restaurant')}</MenuItem>
+          <MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>
         </Menu>
 
         <MenuItem className={classes.buttonTitle} onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>

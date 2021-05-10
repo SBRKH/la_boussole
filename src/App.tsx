@@ -3,6 +3,10 @@ import React from "react";
 import {BrowserRouter} from "react-router-dom";
 import {createMuiTheme, MuiThemeProvider} from "@material-ui/core";
 import {Main} from "./component/Main";
+import DateFnsUtils from "@date-io/date-fns";
+import {MuiPickersUtilsProvider} from "@material-ui/pickers";
+import "moment/locale/fr";
+import {fr} from "date-fns/locale";
 
 const muiTheme = createMuiTheme({
   palette: {
@@ -43,10 +47,12 @@ const muiTheme = createMuiTheme({
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      <MuiThemeProvider theme={muiTheme}>
-        <Main/>
-      </MuiThemeProvider>
-    </BrowserRouter>
+    <MuiPickersUtilsProvider utils={DateFnsUtils} locale={fr}>
+      <BrowserRouter>
+        <MuiThemeProvider theme={muiTheme}>
+          <Main/>
+        </MuiThemeProvider>
+      </BrowserRouter>
+    </MuiPickersUtilsProvider>
   );
 };

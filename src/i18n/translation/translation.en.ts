@@ -5,11 +5,9 @@ export const translationEn = {
   menu: {
     home: "Home",
     history: "History",
-    menu: "Menu",
-    aperitize: "Aperitize",
-    dish: "Dish",
-    dessert: "Dessert",
-    drink: "Drink",
+    menu: "Our Menu",
+    restaurant: "Restaurant",
+    pizzeria: "Pizzeria",
     brunchs: "Brunchs",
     rooms: "Rooms",
     events: "Events",
@@ -20,9 +18,13 @@ export const translationEn = {
   },
   contact: {
     title: "Contact Us",
-    question: "A question ?"
+    findUs: "Find Us"
   },
   error: {
     email: 'You need to fill with an email'
+  },
+  event: {
+    title: "Reservation",
+    findUs: "Find Us"
   }
 }
