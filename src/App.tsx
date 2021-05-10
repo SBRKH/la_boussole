@@ -16,15 +16,25 @@ const muiTheme = createMuiTheme({
     tonalOffset: 0.2,
   },
   overrides: {
+    MuiInputBase: {
+      input: {
+        color: "rgba(250, 250, 250, 1)",
+      }
+    },
+    "MuiInputLabel": {
+      root: {
+        color: "rgba(250, 250, 250, 1)",
+      }
+    },
     MuiOutlinedInput: {
       root: {
         "& $notchedOutline": {
-          borderColor: "#fff",
-          color: "#fff"
+          borderColor: "rgba(250, 250, 250, 1)",
+          color: "rgba(250, 250, 250, 1)",
         },
         "&:hover $notchedOutline": {
-          borderColor: "#fff",
-          color: "#fff"
+          borderColor: "rgba(250, 250, 250, 1)",
+          color: "rgba(250, 250, 250, 1)",
         },
       }
     },

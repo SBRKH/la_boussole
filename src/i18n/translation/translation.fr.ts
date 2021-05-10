@@ -17,5 +17,12 @@ export const translationFr = {
     photos: "Photos",
     videos: "Videos",
     contact: "Contact"
+  },
+  contact: {
+    title: "Nous contacter",
+    question: "Une question ?"
+  },
+  error: {
+    email: 'Merci de renseigner un email valide'
   }
 }
