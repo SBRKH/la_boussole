@@ -1,5 +1,15 @@
 import React, {useState} from "react";
-import {AppBar, Button, IconButton, makeStyles, Menu, MenuItem, Toolbar, Typography} from "@material-ui/core";
+import {
+  AppBar,
+  Button,
+  IconButton,
+  makeStyles,
+  Menu,
+  MenuItem,
+  Toolbar,
+  Typography,
+  useScrollTrigger
+} from "@material-ui/core";
 import {useHistory} from 'react-router-dom';
 import i18n from "../i18n/i18nconfig.js";
 import frFlag from '../static/fr_flag.svg';
@@ -24,7 +34,23 @@ const fr = 'fr';
 const en = 'en';
 type lngType = typeof fr | typeof en;
 
-export const MainAppBar: React.FC = () => {
+function ElevationScroll(props: any) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+    target: window ? window() : undefined,
+  });
+
+  return React.cloneElement(children, {
+    elevation: trigger ? 4 : 0,
+  });
+}
+
+export const MainAppBar: React.FC<any> = (props) => {
   const classes = useStyles();
   const history = useHistory();
   const [seeMenu, setSeeMenu] = useState<any>(null);
@@ -101,6 +127,7 @@ export const MainAppBar: React.FC = () => {
   }
 
   return (
+    <ElevationScroll {...props}>
     <AppBar position={'fixed'} color={"transparent"}>
       <Toolbar>
         <Typography variant={"h5"} color={"primary"}>La Boussole</Typography>
@@ -162,5 +189,6 @@ export const MainAppBar: React.FC = () => {
         </Menu>
       </Toolbar>
     </AppBar>
+    </ElevationScroll>
   )
 }
