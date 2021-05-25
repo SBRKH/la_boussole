@@ -12,11 +12,15 @@ import {
 } from "@material-ui/core";
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     overflow: "hidden"
+  },
+  card: {
+    backgroundColor: "rgba(0, 0, 0, .75)",
+    color: theme.palette.secondary.main,
   }
-});
+}));
 
 export const History: FC = () => {
   const classes = useStyles();
@@ -24,7 +28,7 @@ export const History: FC = () => {
   return (
     <Grid container justify={"center"} className={classes.root}>
       <Grid item xs={10}>
-        <Card>
+        <Card className={classes.card}>
           <CardHeader title={"Notre Histoire"} />
           <CardContent>
             <Typography>Pour dénicher l’origine de La Boussole il faut revenir sur l’Antiquité et se demander pourquoi cette invention s’est étalée sur plusieurs siècles.</Typography>
@@ -35,25 +39,25 @@ export const History: FC = () => {
             <List>
               <ListItem>
                 <ListItemIcon>
-                  <ArrowRightAltIcon />
+                  <ArrowRightAltIcon color={"secondary"}/>
                 </ListItemIcon>
                 <ListItemText primary={"Les vents soufflant du Nord s'inviteront à travers des parfums subtils et des arômes authentiques avec notre technique de fumage maison."} />
               </ListItem>
               <ListItem>
                 <ListItemIcon>
-                  <ArrowRightAltIcon />
+                  <ArrowRightAltIcon color={"secondary"}/>
                 </ListItemIcon>
                 <ListItemText primary={"A l'Ouest de la Boussole il faudra forcement traverser la ''Route des Épices'' donc à l'aide de vos papilles préparez-vous aux associations du Chef Haute en Saveurs !"} />
               </ListItem>
               <ListItem>
                 <ListItemIcon>
-                  <ArrowRightAltIcon />
+                  <ArrowRightAltIcon color={"secondary"}/>
                 </ListItemIcon>
                 <ListItemText primary={"En allant vers l’Est, nous naviguerons avec nos viandes maturées et sur la route du Soleil les couleurs de nos légumes s'accompagneront pour sublimer vos assiettes et votre palais !"} />
               </ListItem>
               <ListItem>
                 <ListItemIcon>
-                  <ArrowRightAltIcon />
+                  <ArrowRightAltIcon color={"secondary"}/>
                 </ListItemIcon>
                 <ListItemText primary={"Finissons au Sud avec nos desserts culte de la cuisine française, au pied du Salève dans un lieu noble et chaleureux ! Après ce tour du Monde, vous vous retrouverez toujours au bon endroit grâce à la Boussole et les savoir-faire du Chef et sa cuisine bistronomique reprenant les classiques de France avec nos viandes Halal. Nous sommes impatients de vous régaler !"} />
               </ListItem>
