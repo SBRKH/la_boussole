@@ -2,12 +2,14 @@ import React, {useState} from "react";
 import {
   AppBar,
   Button,
-  IconButton, List, ListItem, ListItemText,
+  IconButton,
   makeStyles,
   Menu,
-  MenuItem, SwipeableDrawer,
+  MenuItem,
+  SwipeableDrawer,
   Toolbar,
-  Typography, useMediaQuery,
+  Typography,
+  useMediaQuery,
   useScrollTrigger
 } from "@material-ui/core";
 import {useHistory} from 'react-router-dom';
@@ -127,69 +129,68 @@ const DesktopMenu: React.FC<any> = (props) => {
     handleCloseLanguages();
   }
 
-    return (
-      <>
-        <MenuItem className={classes.buttonTitle} onClick={handleClickHome}>{i18n.t('menu.home')}</MenuItem>
-        <MenuItem className={classes.buttonTitle} onClick={handleClickHistory}>{i18n.t('menu.history')}</MenuItem>
+  return (
+    <>
+      <MenuItem className={classes.buttonTitle} onClick={handleClickHome}>{i18n.t('menu.home')}</MenuItem>
+      <MenuItem className={classes.buttonTitle} onClick={handleClickHistory}>{i18n.t('menu.history')}</MenuItem>
 
-        <Button className={classes.buttonTitle} onClick={handleClickMenu}>{i18n.t('menu.menu')}</Button>
-        <Menu anchorEl={seeMenu} keepMounted open={Boolean(seeMenu)} onClose={handleCloseMenu}>
-          <MenuItem onClick={handleClickMenuRestaurant}>{i18n.t('menu.restaurant')}</MenuItem>
-          <MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>
-        </Menu>
+      <Button className={classes.buttonTitle} onClick={handleClickMenu}>{i18n.t('menu.menu')}</Button>
+      <Menu anchorEl={seeMenu} keepMounted open={Boolean(seeMenu)} onClose={handleCloseMenu}>
+        <MenuItem onClick={handleClickMenuRestaurant}>{i18n.t('menu.restaurant')}</MenuItem>
+        <MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>
+      </Menu>
 
-        <MenuItem className={classes.buttonTitle} onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>
-        <MenuItem className={classes.buttonTitle} onClick={handleClickRooms}>{i18n.t('menu.rooms')}</MenuItem>
-        <MenuItem className={classes.buttonTitle} onClick={handleClickEvent}>{i18n.t('menu.events')}</MenuItem>
+      <MenuItem className={classes.buttonTitle} onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>
+      <MenuItem className={classes.buttonTitle} onClick={handleClickRooms}>{i18n.t('menu.rooms')}</MenuItem>
+      <MenuItem className={classes.buttonTitle} onClick={handleClickEvent}>{i18n.t('menu.events')}</MenuItem>
 
-        <Button className={classes.buttonTitle} onClick={handleClickGoldenkMenu}>{i18n.t('menu.guestBook')}</Button>
-        <Menu anchorEl={seeGoldenReview} keepMounted open={Boolean(seeGoldenReview)} onClose={handleCloseGolden}>
-          <MenuItem onClick={handleClickPhotos}>{i18n.t('menu.photos')}</MenuItem>
-          <MenuItem onClick={handleClickVideos}>{i18n.t('menu.videos')}</MenuItem>
-        </Menu>
+      <Button className={classes.buttonTitle} onClick={handleClickGoldenkMenu}>{i18n.t('menu.guestBook')}</Button>
+      <Menu anchorEl={seeGoldenReview} keepMounted open={Boolean(seeGoldenReview)} onClose={handleCloseGolden}>
+        <MenuItem onClick={handleClickPhotos}>{i18n.t('menu.photos')}</MenuItem>
+        <MenuItem onClick={handleClickVideos}>{i18n.t('menu.videos')}</MenuItem>
+      </Menu>
 
-        <MenuItem className={classes.buttonTitle} onClick={handleClickContact}>{i18n.t('menu.contact')}</MenuItem>
+      <MenuItem className={classes.buttonTitle} onClick={handleClickContact}>{i18n.t('menu.contact')}</MenuItem>
 
-        <IconButton onClick={handleClickLanguages} color={"inherit"}>
+      <IconButton onClick={handleClickLanguages} color={"inherit"}>
+        <img
+          src={i18n.language === fr ? frFlag : enFlag}
+          alt={'pictogram flag'}
+          width={'20'}
+          height={'auto'}
+        />
+      </IconButton>
+      <Menu anchorEl={seeLanguages} keepMounted open={Boolean(seeLanguages)} onClose={handleCloseLanguages}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'right'
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'right',
+            }}>
+        <MenuItem onClick={() => changeLanguage(fr)}>
           <img
-            src={i18n.language === fr ? frFlag : enFlag}
+            src={frFlag}
             alt={'pictogram flag'}
             width={'20'}
             height={'auto'}
           />
-        </IconButton>
-        <Menu anchorEl={seeLanguages} keepMounted open={Boolean(seeLanguages)} onClose={handleCloseLanguages}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right'
-              }}
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}>
-          <MenuItem onClick={() => changeLanguage(fr)}>
-            <img
-              src={frFlag}
-              alt={'pictogram flag'}
-              width={'20'}
-              height={'auto'}
-            />
-          </MenuItem>
-          <MenuItem onClick={() => changeLanguage(en)}>
-            <img
-              src={enFlag}
-              alt={'pictogram flag'}
-              width={'20'}
-              height={'auto'}
-            />
-          </MenuItem>
-        </Menu>
-      </>
-    );
+        </MenuItem>
+        <MenuItem onClick={() => changeLanguage(en)}>
+          <img
+            src={enFlag}
+            alt={'pictogram flag'}
+            width={'20'}
+            height={'auto'}
+          />
+        </MenuItem>
+      </Menu>
+    </>
+  );
 }
 
 const MobileMenu: React.FC<any> = (props) => {
-  const classes = useStyles();
   const history = useHistory();
   const [seeMobileMenu, setSeeMobileMenu] = useState<boolean>(false);
   const [seeLanguages, setSeeLanguages] = useState<any>(null);
