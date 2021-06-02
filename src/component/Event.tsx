@@ -99,6 +99,17 @@ export const Event: React.FC = () => {
                         />
                       </Grid>
                       <Grid item xs={12}>
+                        <TextField label={"Nombre de couverts"}
+                                   name={"numberGuests"}
+                                   variant={"outlined"}
+                                   fullWidth={true}
+                                   type={"number"}
+                                   inputProps={{
+                                     min: 0
+                                   }}
+                                   required={true}/>
+                      </Grid>
+                      <Grid item xs={12}>
                         <TextField label={"Votre message"}
                                    name={"content"}
                                    variant={"outlined"}

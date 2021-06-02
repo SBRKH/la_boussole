@@ -32,7 +32,7 @@ export const Restaurant: React.FC = () => {
 
   return (
     <Grid container justify={"center"}>
-      <Typography variant={"h3"} color={"primary"}>MENU HALAL ✨</Typography>
+      <Typography variant={"h3"} color={"primary"}>Notre Carte</Typography>
       <Grid item xs={10}>
         <Accordion className={classes.accordion}>
           <AccordionSummary expandIcon={<ExpandMoreIcon color={"primary"}/>}>
@@ -113,7 +113,7 @@ export const Restaurant: React.FC = () => {
             <List>
               <ListItem>
                 <ListItemText
-                  primary={"Hamburger Boussole (galette de pomme de terre, tranches de cheddar, oignons confits, feuilles de laitue, tomates)"}
+                  primary={"Hamburger Boussole (steak, galette de pomme de terre, tranches de cheddar, oignons confits, feuilles de laitue, tomates)"}
                   secondary={"17,90€"}
                   secondaryTypographyProps={{
                     color: "secondary"
@@ -331,7 +331,7 @@ export const Restaurant: React.FC = () => {
                               }}/>
               </ListItem>
               <ListItem>
-                <ListItemText primary={"Tagliatelles aux saumon fumée, crème parmesan"}
+                <ListItemText primary={"Tagliatelles aux saumons fumée, crème parmesan"}
                               secondary={"16,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary"

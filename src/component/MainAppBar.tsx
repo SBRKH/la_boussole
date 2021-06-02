@@ -17,6 +17,7 @@ import i18n from "../i18n/i18nconfig.js";
 import frFlag from '../static/fr_flag.svg';
 import enFlag from '../static/en_flag.svg';
 import MenuIcon from '@material-ui/icons/Menu';
+import logosvg from "./../static/logo.png";
 
 const useStyles = makeStyles(theme => ({
   grow: {
@@ -104,10 +105,6 @@ const DesktopMenu: React.FC<any> = (props) => {
     history.push("/brunch");
   }
 
-  function handleClickRooms() {
-    history.push("/rooms");
-  }
-
   function handleClickEvent() {
     history.push("/events");
   }
@@ -141,7 +138,6 @@ const DesktopMenu: React.FC<any> = (props) => {
       </Menu>
 
       <MenuItem className={classes.buttonTitle} onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>
-      <MenuItem className={classes.buttonTitle} onClick={handleClickRooms}>{i18n.t('menu.rooms')}</MenuItem>
       <MenuItem className={classes.buttonTitle} onClick={handleClickEvent}>{i18n.t('menu.events')}</MenuItem>
 
       <Button className={classes.buttonTitle} onClick={handleClickGoldenkMenu}>{i18n.t('menu.guestBook')}</Button>
@@ -223,10 +219,6 @@ const MobileMenu: React.FC<any> = (props) => {
     history.push("/brunch");
   }
 
-  function handleClickRooms() {
-    history.push("/rooms");
-  }
-
   function handleClickEvent() {
     history.push("/events");
   }
@@ -262,7 +254,6 @@ const MobileMenu: React.FC<any> = (props) => {
         <MenuItem onClick={handleClickMenuRestaurant}>{i18n.t('menu.restaurant')}</MenuItem>
         <MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>
         <MenuItem onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>
-        <MenuItem onClick={handleClickRooms}>{i18n.t('menu.rooms')}</MenuItem>
         <MenuItem onClick={handleClickEvent}>{i18n.t('menu.events')}</MenuItem>
         <MenuItem onClick={handleClickPhotos}>{i18n.t('menu.photos')}</MenuItem>
         <MenuItem onClick={handleClickVideos}>{i18n.t('menu.videos')}</MenuItem>
@@ -315,7 +306,7 @@ export const MainAppBar: React.FC<any> = (props) => {
     <ElevationScroll {...props}>
       <AppBar position={'fixed'} color={"transparent"}>
         <Toolbar>
-          <Typography variant={"h5"} color={"secondary"}>La Boussole</Typography>
+            <img src={logosvg} style={{height: 60}}/>
           <div className={classes.grow}/>
           {isTabletOrMobileDevice ? <MobileMenu {...props} /> : <DesktopMenu {...props} />}
         </Toolbar>

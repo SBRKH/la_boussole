@@ -8,6 +8,8 @@ import {Event} from "./Event";
 import {Photos} from "./goldenBook/Photos";
 import {Restaurant} from "./menu/Restaurant";
 import {Pizzeria} from "./menu/Pizzeria";
+import {Videos} from "./goldenBook/Videos";
+import {Brunch} from "./Brunch";
 
 const useStyle = makeStyles(theme => {
   return {
@@ -35,11 +37,11 @@ export const MainRoute: React.FC = () => {
         <Route path={"/history"} component={History} />
         <Route path={"/food/restaurant"} component={Restaurant} />
         <Route path={"/food/pizzeria"} component={Pizzeria} />
-        <Route path={"/brunch"} component={() => <Typography>Contact</Typography>} />
+        <Route path={"/brunch"} component={Brunch} />
         <Route path={"/rooms"} component={() => <Typography>Contact</Typography>} />
         <Route path={"/events"} component={Event} />
         <Route path={"/photos"} component={Photos} />
-        <Route path={"/videos"} component={() => <Typography>Contact</Typography>} />
+        <Route path={"/videos"} component={Videos} />
       </Switch>
     </main>
   );

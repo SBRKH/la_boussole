@@ -22,7 +22,7 @@ export const Pizzeria: React.FC = () => {
 
   return (
     <Grid container justify={"center"}>
-      <Typography variant={"h3"} color={"primary"}>MENU HALAL ✨</Typography>
+      <Typography variant={"h3"} color={"primary"}>Notre Carte</Typography>
       <Grid item xs={10}>
         <Accordion className={classes.accordion}>
           <AccordionSummary expandIcon={<ExpandMoreIcon color={"primary"}/>}>
