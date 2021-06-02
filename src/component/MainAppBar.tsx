@@ -8,7 +8,6 @@ import {
   MenuItem,
   SwipeableDrawer,
   Toolbar,
-  Typography,
   useMediaQuery,
   useScrollTrigger
 } from "@material-ui/core";
@@ -306,7 +305,7 @@ export const MainAppBar: React.FC<any> = (props) => {
     <ElevationScroll {...props}>
       <AppBar position={'fixed'} color={"transparent"}>
         <Toolbar>
-            <img src={logosvg} style={{height: 60}}/>
+          <img src={logosvg} style={{height: 60}}/>
           <div className={classes.grow}/>
           {isTabletOrMobileDevice ? <MobileMenu {...props} /> : <DesktopMenu {...props} />}
         </Toolbar>
