@@ -37,8 +37,6 @@ export const Event: React.FC = () => {
   return (
     <>
       <Typography variant={"h2"} color={"primary"} className={classes.title}>{i18n.t('event.title')}</Typography>
-      <Typography variant={"h2"} color={"secondary"} align={"right"}
-                  className={classes.title}>{i18n.t('event.findUs')}</Typography>
       <Grid container className={classes.test}>
         <Grid item xs={6}>
           <Form onSubmit={handleOnSubmit}

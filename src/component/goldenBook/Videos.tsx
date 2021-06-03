@@ -5,6 +5,7 @@ import v1 from "./../../static/book/v1.mp4";
 import v2 from "./../../static/book/v2.mp4";
 import v3 from "./../../static/book/v3.mp4";
 import v4 from "./../../static/book/v4.mp4";
+import v5 from "./../../static/book/v5.mp4";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,6 +42,12 @@ const tileData = [
   },
   {
     img: v4,
+    title: 'Image',
+    author: 'author',
+    cols: 5,
+  },
+  {
+    img: v5,
     title: 'Image',
     author: 'author',
     cols: 5,

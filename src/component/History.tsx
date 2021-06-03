@@ -32,7 +32,7 @@ export const History: FC = () => {
               cuisine juste le temps d’une dégustation de nos recettes savoureuses offertes d’ailleurs en prenant la
               direction de La Boussole</Typography>
             <br />
-            <Typography align={"center"}>Arrivant de l'Ancienne Perse, le Chef dotée de plus de dix ans d’expériences saura vous
+            <Typography align={"center"}>Notre chef dotée de plus de dix ans d’expériences saura vous
               impressionner et ravir vos papilles.</Typography>
             <br />
             <Typography align={"center"}>En montant à bord de notre navire et en observant La Boussole à plat on peut s’apercevoir que
