@@ -1,6 +1,6 @@
 import {Card, CardContent, CardHeader, CardMedia, Grid, makeStyles, Typography} from "@material-ui/core";
 import React from "react";
-import brunchImage from "./../static/brunch.jpg";
+import brunchImage from "./../static/brunch.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +26,7 @@ export const Brunch: React.FC = () => {
     <Grid container justify={"center"} className={classes.root}>
       <Grid item xs={10}>
         <Card className={classes.card}>
-          <CardHeader title={"Nos Brunchs"}/>
+          <CardHeader title={"NOS BRUNCHS"}/>
           <CardContent>
             <Typography align={"center"}>Désormais, il est possible de venir "bruncher" chez La Boussole.</Typography>
             <Typography align={"center"}>Nous vous proposons un menu à volonté tous les dimanches de 11h à 16h.</Typography>

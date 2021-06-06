@@ -7,7 +7,8 @@ import * as Yup from 'yup';
 
 const useStyle = makeStyles({
   title: {
-    fontWeight: "bold"
+    fontWeight: "bold",
+    textShadow: "-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5)",
   },
   content: {
     minHeight: 200
@@ -16,7 +17,7 @@ const useStyle = makeStyles({
     marginTop: 10
   },
   test: {
-    minWidth: "100%"
+    minWidth: "100%",
   }
 });
 

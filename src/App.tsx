@@ -23,11 +23,13 @@ const muiTheme = createMuiTheme({
     MuiInputBase: {
       input: {
         color: "rgba(250, 250, 250, 1)",
+        textShadow: "-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5)",
       }
     },
     "MuiInputLabel": {
       root: {
         color: "rgba(250, 250, 250, 1)",
+        textShadow: "-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5)",
       }
     },
     MuiOutlinedInput: {
@@ -35,10 +37,12 @@ const muiTheme = createMuiTheme({
         "& $notchedOutline": {
           borderColor: "rgba(250, 250, 250, 1)",
           color: "rgba(250, 250, 250, 1)",
+          textShadow: "-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5)",
         },
         "&:hover $notchedOutline": {
           borderColor: "rgba(250, 250, 250, 1)",
           color: "rgba(250, 250, 250, 1)",
+          textShadow: "-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5)",
         },
       }
     },

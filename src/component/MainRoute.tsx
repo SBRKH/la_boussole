@@ -14,11 +14,10 @@ import {Brunch} from "./Brunch";
 const useStyle = makeStyles(theme => {
   return {
     main: {
+      margin: 20,
       flexGrow: 1,
-      overflow: 'auto',
-    },
-    mainConnect: {
-      padding: '0 10vw',
+      overflowX: 'auto',
+      paddingBottom: 120,
     },
     appbar: {
       paddingTop: 70,
@@ -30,7 +29,7 @@ export const MainRoute: React.FC = () => {
   const classes = useStyle();
 
   return (
-    <main className={clsx(classes.main, classes.appbar, classes.mainConnect)}>
+    <main className={clsx(classes.main, classes.appbar)}>
       <Switch>
         <Route exact path={"/"} component={() => <Typography>Home</Typography>} />
         <Route path={"/contact"} component={Contact} />

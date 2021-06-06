@@ -8,7 +8,8 @@ import DateFnsUtils from '@date-io/date-fns';
 
 const useStyle = makeStyles({
   title: {
-    fontWeight: "bold"
+    fontWeight: "bold",
+    textShadow: "-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5)",
   },
   content: {
     minHeight: 200

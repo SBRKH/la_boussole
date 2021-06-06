@@ -2,20 +2,19 @@ import React from "react";
 import {makeStyles, Paper} from "@material-ui/core";
 import {MainAppBar} from "./MainAppBar";
 import {MainRoute} from "./MainRoute";
-import backgroundImage from "../static/bg.jpg";
+import backgroundImage from "../static/bg3.webp";
+import {MainFooter} from "./MainFooter";
 
 const useStyle = makeStyles(theme => {
   return {
     app: {
-      display: 'flex',
       height: '100vh',
       backgroundImage: `url(${backgroundImage})`,
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
-      overflow: 'hidden',
-      position: 'relative',
-    },
+      overflowX: 'hidden',
+    }
   };
 });
 
@@ -25,6 +24,7 @@ export const Main: React.FC = () => {
     <Paper className={classes.app}>
       <MainAppBar/>
       <MainRoute/>
+      <MainFooter/>
     </Paper>
   );
 }
