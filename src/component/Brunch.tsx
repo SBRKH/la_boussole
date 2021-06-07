@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
+  title: {
+    textAlign: "center"
+  }
 }));
 
 export const Brunch: React.FC = () => {
@@ -26,7 +29,7 @@ export const Brunch: React.FC = () => {
     <Grid container justify={"center"} className={classes.root}>
       <Grid item xs={10}>
         <Card className={classes.card}>
-          <CardHeader title={"NOS BRUNCHS"}/>
+          <CardHeader title={"NOS BRUNCHS"} className={classes.title}/>
           <CardContent>
             <Typography align={"center"}>Désormais, il est possible de venir "bruncher" chez La Boussole.</Typography>
             <Typography align={"center"}>Nous vous proposons un menu à volonté tous les dimanches de 11h à 16h.</Typography>

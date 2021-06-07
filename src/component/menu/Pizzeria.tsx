@@ -187,7 +187,7 @@ export const Pizzeria: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"2,00€"}
+                              secondary={"5,00€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -489,9 +489,15 @@ export const Pizzeria: React.FC = () => {
                               }}
                               secondary={
                                 <List>
-                                  <ListItem><ListItemText primary={"1 Boule 3,50€"}/></ListItem>
-                                  <ListItem><ListItemText primary={"2 Boules 6,00€"}/></ListItem>
-                                  <ListItem><ListItemText primary={"3 Boules 9,00€"}/></ListItem>
+                                  <ListItem><ListItemText primary={"1 Boule 3,50€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"2 Boules 6,00€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"3 Boules 9,00€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
                                 </List>
                               }
                               secondaryTypographyProps={{

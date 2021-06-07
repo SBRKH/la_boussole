@@ -17,7 +17,12 @@ const useStyle = makeStyles(theme => {
       margin: 20,
       flexGrow: 1,
       overflowX: 'auto',
-      paddingBottom: 120,
+      [theme.breakpoints.down('md')]: {
+        paddingBottom: 320,
+      },
+      [theme.breakpoints.up('md')]: {
+        paddingBottom: 120,
+      },
     },
     appbar: {
       paddingTop: 70,

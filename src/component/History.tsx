@@ -11,7 +11,9 @@ const useStyles = makeStyles((theme) => ({
   },
   bold: {
     fontWeight: "bold",
-    fontFamily: 'Monotype-Corsiva',
+  },
+  title: {
+    textAlign: "center"
   }
 }));
 
@@ -22,7 +24,7 @@ export const History: FC = () => {
     <Grid container justify={"center"} className={classes.root}>
       <Grid item xs={10}>
         <Card className={classes.card}>
-          <CardHeader title={"NOTRE HISTOIRE"}/>
+          <CardHeader title={"NOTRE HISTOIRE"} className={classes.title}/>
           <CardContent>
             <Typography className={classes.bold} align={"center"}>Pour dénicher l’origine de La Boussole il faut revenir sur l’antiquité et se demander pourquoi cette invention s’est étalée sur plusieurs siècles. Le perfectionnement de cette invention nous a en effet permis de nouvelles découvertes et nous pouvons donc appréhender le monde peu importe le temps ou l’horaire indiqué nous sommes assurés de ne jamais perdre le Nord !</Typography>
             <br />

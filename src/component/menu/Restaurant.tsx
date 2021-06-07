@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
   listContent: {
     width: "100%",
   },
+  bold: {
+    fontWeight: "bold"
+  }
 }));
 
 export const Restaurant: React.FC = () => {
@@ -307,6 +310,9 @@ export const Restaurant: React.FC = () => {
 
               <ListItem>
                 <ListItemText primary={"Supplément de garnitures"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}
@@ -319,32 +325,56 @@ export const Restaurant: React.FC = () => {
 
               <ListItem>
                 <ListItemText primary={"Frites maison"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}/>
               </ListItem>
               <ListItem>
                 <ListItemText primary={"Purée pommes de terre / Patate douce"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}/>
               </ListItem>
               <ListItem>
                 <ListItemText primary={"Haricots verts"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}/>
               </ListItem>
               <ListItem>
-                <ListItemText primary={"Riz basmati Pomme grenaille"}
+                <ListItemText primary={"Riz basmati"}
+                              classes={{
+                                primary: classes.bold
+                              }}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}/>
+              </ListItem>
+              <ListItem>
+                <ListItemText primary={"Pomme grenaille"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}/>
               </ListItem>
               <ListItem>
                 <ListItemText primary={"Supplément sauce"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
-                                align: "center"
+                                align: "center",
                               }}
                               secondary={"2,50€"}
                               secondaryTypographyProps={{
@@ -436,37 +466,55 @@ export const Restaurant: React.FC = () => {
 
               <ListItem>
                 <ListItemText primary={"Garnitures au choix"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
-                                align: "center"
+                                align: "center",
                               }}/>
               </ListItem>
 
               <ListItem>
                 <ListItemText primary={"Frites maison"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}/>
               </ListItem>
               <ListItem>
                 <ListItemText primary={"Purée pommes de terre"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}/>
               </ListItem>
               <ListItem>
                 <ListItemText primary={"Haricots verts"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}/>
               </ListItem>
               <ListItem>
                 <ListItemText primary={"Riz basmati"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}/>
               </ListItem>
               <ListItem>
                 <ListItemText primary={"Pomme grenaille"}
+                              classes={{
+                                primary: classes.bold
+                              }}
                               primaryTypographyProps={{
                                 align: "center"
                               }}/>
@@ -493,7 +541,7 @@ export const Restaurant: React.FC = () => {
                               }}/>
               </ListItem>
               <ListItem>
-                <ListItemText primary={"Tagliatelles aux saumons fumée, crème parmesan"}
+                <ListItemText primary={"Tagliatelles au saumon fumé, crème parmesan"}
                               primaryTypographyProps={{
                                 align: "center"
                               }}
@@ -693,9 +741,15 @@ export const Restaurant: React.FC = () => {
                               }}
                               secondary={
                                 <List>
-                                  <ListItem><ListItemText primary={"1 Boule 3,50€"}/></ListItem>
-                                  <ListItem><ListItemText primary={"2 Boules 6,00€"}/></ListItem>
-                                  <ListItem><ListItemText primary={"3 Boules 9,00€"}/></ListItem>
+                                  <ListItem><ListItemText primary={"1 Boule 3,50€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"2 Boules 6,00€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"3 Boules 9,00€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
                                 </List>
                               }
                               secondaryTypographyProps={{

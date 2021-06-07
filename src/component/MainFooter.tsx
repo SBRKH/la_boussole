@@ -79,7 +79,7 @@ export const MainFooter: React.FC = () => {
           </Typography>
         </Grid>
         <Grid container item xs={6}>
-          <Grid item xs={2}>
+          <Grid item xs={12} md={2}>
             <IconButton aria-label="snap">
               <Typography color={"secondary"} className={classes.iconTextVertically}>
                 <img src={snapsvg} style={{height: 20}} alt={"logo"}/>
@@ -87,12 +87,12 @@ export const MainFooter: React.FC = () => {
               </Typography>
             </IconButton>
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={12} md={2}>
             <IconButton aria-label="facebook" onClick={handleClickFb}>
               <img src={fbsvg} style={{height: 20}} alt={"logo"}/>
             </IconButton>
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={12} md={2}>
             <IconButton aria-label="insta" onClick={handleClickInsta}>
               <img src={instasvg} style={{height: 20}} alt={"logo"}/>
             </IconButton>
