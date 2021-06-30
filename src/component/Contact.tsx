@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import {Button, Grid, makeStyles, Typography} from "@material-ui/core";
 import {Form} from "react-final-form";
 import {makeValidate, TextField} from 'mui-rff';
 import i18n from "../i18n/i18nconfig";
 import * as Yup from 'yup';
+import {send} from "emailjs-com";
+import {Success} from "../core/Success";
+import {Error} from "../core/Error";
 
 const useStyle = makeStyles({
   title: {
@@ -30,9 +33,27 @@ const formValidatorSchema = Yup.object().shape({
 export const Contact: React.FC = () => {
   const classes = useStyle();
   const validate = makeValidate(formValidatorSchema);
+  const [openSuccess, setOpenSuccess] = useState<boolean>(false);
+  const [openError, setOpenError] = useState<boolean>(false);
 
   function handleOnSubmit(values: any) {
+    const data = {
+      name: values.name + " " + values.firstname,
+      message: values.content,
+      email: values.email,
+      phone: values.phone,
+    }
 
+    send("service_mkaw9i8", "template_3ocmovn", data, "user_uxZQ12PsVSe8CPIEWxbVs").then(
+      (response) => {
+        setOpenSuccess(true);
+        console.log(response.status, response.text);
+      },
+      (err) => {
+        setOpenError(true);
+        console.log(err);
+      }
+    );
   }
 
   return (
@@ -105,6 +126,8 @@ export const Contact: React.FC = () => {
                   width="400" height="300" style={{border: 0}} allowFullScreen={true} loading={"lazy"}/>
         </Grid>
       </Grid>
+      <Success open={openSuccess} onClose={() => setOpenSuccess(false)} message={"Votre demande de réservation a bien été envoyé!"} />
+      <Error open={openError} onClose={() => setOpenError(false)} message={"Une erreur est survenue..."} />
     </>
   );
 }

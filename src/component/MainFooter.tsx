@@ -49,7 +49,7 @@ export const MainFooter: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <Grid spacing={2} container className={classes.main}>
+      <Grid spacing={4} container className={classes.main}>
         <Grid item xs={3}>
           <Typography color={"secondary"} align={"center"}>La Boussole</Typography>
           <Typography color={"secondary"} align={"center"}>Restaurant Bistronomique</Typography>
@@ -75,7 +75,7 @@ export const MainFooter: React.FC = () => {
         <Grid item xs={3}/>
         <Grid item xs={2}>
           <Typography color={"secondary"} align={"center"}>
-            © 2021 La Boussole tous droits réservés
+            © 2021 La Boussole Tous droits réservés
           </Typography>
         </Grid>
         <Grid container item xs={6}>
@@ -89,12 +89,18 @@ export const MainFooter: React.FC = () => {
           </Grid>
           <Grid item xs={12} md={2}>
             <IconButton aria-label="facebook" onClick={handleClickFb}>
-              <img src={fbsvg} style={{height: 20}} alt={"logo"}/>
+              <Typography color={"secondary"} className={classes.iconTextVertically}>
+                <img src={fbsvg} style={{height: 20}} alt={"logo"}/>
+                laboussole74
+              </Typography>
             </IconButton>
           </Grid>
           <Grid item xs={12} md={2}>
             <IconButton aria-label="insta" onClick={handleClickInsta}>
-              <img src={instasvg} style={{height: 20}} alt={"logo"}/>
+              <Typography color={"secondary"} className={classes.iconTextVertically}>
+                <img src={instasvg} style={{height: 20}} alt={"logo"}/>
+                laboussole74
+              </Typography>
             </IconButton>
           </Grid>
         </Grid>

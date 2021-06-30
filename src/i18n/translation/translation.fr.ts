@@ -18,13 +18,227 @@ export const translationFr = {
   },
   contact: {
     title: "Nous contacter",
-    findUs: "Nous retrouver"
+    findUs: "Nous retrouver",
+    name: "Nom",
+    firstname: "Prénom",
+    phone: "Numéro de téléphone",
+    email: "Email",
+    content: "Votre message",
+    send: "Envoyer",
+    success: "Votre demande de contact a bien été envoyé!",
+    error: "Une erreur est survenue..."
+  },
+  event: {
+    title: "Réservation restaurant",
+    findUs: "Nous retrouver",
+    name: "Nom",
+    firstname: "Prénom",
+    phone: "Numéro de téléphone",
+    email: "Email",
+    content: "Votre message",
+    date: "Date de réservation",
+    time: "Heure de réservation",
+    numberGuests: "Nombre de couverts",
+    send: "Envoyer",
+    success: "Votre demande de réservation a bien été envoyé!",
+    error: "Une erreur est survenue..."
+  },
+  history: {
+    title: "NOTRE HISTOIRE",
+    text: {
+      a: 'Pour dénicher l’origine de La Boussole il faut revenir sur l’antiquité et se demander pourquoi cette invention s’est étalée sur plusieurs siècles. Le perfectionnement de cette invention nous a en effet permis de nouvelles découvertes et nous pouvons donc appréhender le monde peu importe le temps ou l’horaire indiqué nous sommes assurés de ne jamais perdre le Nord !',
+      b: 'Aux quatre coins du monde vous pouvez désormais voyager avec nous en laissant de côté votre cuisine juste le temps d’une dégustation de nos recettes savoureuses offerte d’ailleurs en prenant la direction de La Boussole.',
+      c: 'Notre Chef dotée de plus de dix ans d’expérience saura vous impressionner et ravir vos papilles.',
+      d: 'En montant à bord de notre navire et en observant La Boussole à plat on peut s’apercevoir que :',
+      e: 'Les vents soufflant du Nord s\'invitent à travers des parfums subtils et des arômes authentiques avec notre technique de fumage maison.',
+      f: "À l'Ouest de La Boussole il faudra traverser la « Route des Épices » donc à l'aide de vos papilles préparez-vous aux associations du Chef Haute en Saveurs !",
+      g: "En allant vers l’Est, nous naviguerons avec nos viandes maturées et sur la route du Soleil les couleurs de nos légumes s'accompagnent pour sublimer vos assiettes et votre palais !",
+      h: 'Finissons au Sud avec nos desserts culte de la cuisine française, au pied du Salève dans un lieu noble et chaleureux !',
+      i: "Après ce tour du Monde, vous vous retrouverez toujours au bon endroit grâce à La Boussole et les savoir-faire du Chef et sa cuisine bistronomique reprenant les classiques de France avec nos viandes Halal.",
+      j: 'Nous sommes impatients de vous régaler !'
+    }
   },
   error: {
     email: 'Merci de renseigner un email valide'
   },
-  event: {
-    title: "Réserver",
-    findUs: "Nous retrouver"
+  footer: {
+    name: 'La Boussole',
+    bistro: "Restaurant Bistronomique",
+    openWeekly: 'Ouvert du Mardi au Samedi de 11h45 à 14h30 et de 18h45 à 22h30',
+    openweekend: 'Le Dimanche de 11h à 16h (Brunch) et de 19h à 22h00 (Restaurant)',
+    phone: '04 50 31 18 10',
+    address: '11 Rue René Cassin, 74240 Gaillard',
+    copyright: '© 2021 La Boussole Tous droits réservés',
+
+  },
+  brunchs: {
+    title: "NOS BRUNCHS",
+    prices: {
+      main: "NOS TARIFS",
+      adult: "Adulte : 24,80€",
+      kid: "Enfant (3-7ans) : 9,80€",
+      teen: "Enfant (8-12ans) : 11,80€"
+    },
+    text: {
+      a: 'Désormais, il est possible de venir "bruncher" chez La Boussole.',
+      b: "Nous vous proposons un menu à volonté tous les dimanches de 11h à 16h.",
+      c: "Idéal pour vous retrouver autour d'un brunch avec vos amies, familles.... Vue sur le Salève.",
+      d: "Plats et gourmandises garantis !",
+    }
+  },
+  pizzeria: {
+    title: 'NOTRE CARTE',
+    baseFreshCream: {
+      title: 'Nos Pizzas (BASE CRÈME FRAÎCHE) 🍕',
+      tartufo: 'Crème fraiche, truffe, roquette, mozzarella, huile à la truffe',
+      savoyard: 'Crème fraiche, mozzarella, lardons, tartiflette, pomme de terre',
+      salmone: 'Crème fraiche, saumon fumé, mozzarella, parmesan, aneth',
+      quatreFromages: 'Crème fraiche, mozzarella, gorgonzola, reblochon, parmesan',
+      chef: 'Crème fraiche, mozzarella, poulet curry, champignons de Paris, oignons, ananas',
+      forestiere: 'Crème fraiche, mozzarella, poulet, pomme de terre, champignons',
+      more: 'INGRÉDIENTS SUPPLÉMENTAIRES',
+      truffe: 'TRUFFE',
+    },
+    baseTomato: {
+      title: 'Nos Pizzas (A LA SAUCE TOMATE) 🍕',
+      margherita: 'Sauce tomate, mozzarella, origan',
+      sicilienne: 'Mozzarella, anchois, câpres, olives, origan, basilic',
+      calzone: "Mozzarella, jambon, oeuf (blanc translucide et jaune d'oeuf)",
+      vege: 'Mozzarella, courgettes, aubergines, poivrons, artichaut, oignons, champignons',
+      tunna: 'Mozzarella, câpres, oignons, thon, olives',
+      orientale: 'Mozzarella, merguez, oeufs, poivrons, oignons',
+      chevreMiel: 'Mozzarella, chèvre, noix, miel, tomate cerise, herbes de provence',
+    },
+  },
+  restau: {
+    title: 'NOTRE CARTE',
+    starters: {
+      title: 'Nos Entrées 🧆',
+      a: 'Burrata, tomate cœur de bœuf',
+      b: 'Guacamole crevette sauce cocktail',
+      c: 'Tartare de saumon',
+      d: 'Carpaccio saumon fumé (fumage maison), crème ciboulette, toast',
+      e: 'Foie gras maison, toast, châtaignier de figues',
+    },
+    salads: {
+      title: 'Nos Salades 🥗',
+      a: 'Salade croustillant chèvre, miel',
+      b: 'Salade césar',
+      c: 'Salade niçoise',
+    },
+    hotMeals: {
+      title: 'Plats Chauds 🥘',
+      a: 'Hamburger Boussole (steak, galette de pomme de terre, tranches de cheddar, oignons confits, feuilles de laitue, tomates)',
+      b: "Côtelettes d'agneau risotto d'asperge jus d'agneau",
+      c: 'Tournedos Rossini bœuf, foie gras, pomme grenaille, sauce vin rouge halal',
+      d: 'Foie de veau, ratatouille, sauce aigre douce',
+      e: 'Médaillon de veau purée pommes de terre maison, pleurote et sauce veau',
+      f: 'Suprême de volaille riz basmati sauce volaille',
+      g: 'Escalope milanaise spaghetti sauce tomates',
+      h: 'Blanquette de veau riz basmati',
+      i: 'Bœuf bourguignons penne',
+      j: 'Ballottine de poulet farcie aux champignons, purée pommes de terre ciboulette, sauce forestière',
+      k: "Souris d'agneau, gratin dauphinois, sauce au jus de viande",
+      l: 'Plateau roast-beef cheddar fondue frite maison',
+      more: 'Supplément de garnitures',
+      chips: 'Frites maison',
+      potatoes: 'Purée pommes de terre / Patate douce',
+      green: 'Haricots verts',
+      rice: 'Riz basmati',
+      grenaille: 'Pomme grenaille',
+      moreSauce: 'Supplément sauce',
+    },
+    meats: {
+      title: 'Nos Viandes 🥩',
+      a: 'Magret de canard, sauce exotique',
+      b: 'Rumsteck de bœuf, sauce champignon',
+      c: 'Demi-Poulet cuit à la braise, salade, sauce verte',
+      d: 'Côte de bœuf maturée, sauce viande Black Angus (minimum 800g)',
+      e: 'Entrecôte, sauce béarnaise',
+      f: 'Faux filet, sauce au poivre',
+      with: 'Garnitures au choix',
+      chips: 'Frites maison',
+      potatoes: 'Purée pommes de terre / Patate douce',
+      green: 'Haricots verts',
+      rice: 'Riz basmati',
+      grenaille: 'Pomme grenaille',
+    },
+    pasta: {
+      title: 'Nos Pâtes 🍝',
+      a: 'Lasagnes bolognaises parmesan, salade verte',
+      b: 'Tagliatelles au saumon fumé, crème parmesan',
+      c: 'Tagliatelles poulet sauce forestière, champignons, parmesan',
+      d: 'Spaghetti à la truffe fraiche'
+    },
+    child: {
+      title: 'Menu Enfant 🧒',
+      content: 'Nuggets, frites, boissons (grenadine ou jus de fruits) et glace'
+    }
+  },
+  common: {
+    desserts: {
+      title: 'Nos Desserts 🍰',
+      citron: 'Tarte au citron',
+      fondant: 'Fondant au chocolat, glace vanille',
+      creme: 'Crème brûlée',
+      crumble: 'Crumble pomme poire',
+      tiramisu: 'Tiramisu',
+      panacotta: 'Panacotta fruit rouge',
+      cheesecake: 'Cheesecake coulis fruits rouges',
+      mousse: 'Mousse au chocolat'
+    },
+    glaces: {
+      title: 'Nos Glaces 🍨',
+      our: 'Nos Glaces :',
+      type: 'Vanille, Café, Pistache, Fraise, Menthe-Chocolat',
+      creme: 'Nos Crèmes Glacées :',
+      typeCreme: 'Chocolat au lait, Spéculoos, Caramel fleur de sel, Noix de coco, Praliné',
+      sorbet: 'Nos Sorbets :',
+      one: '1 Boule 3,50€',
+      two: '2 Boules 6,00€',
+      three: '3 Boules 9,00€',
+      more: 'Supplément chantilly ou arôme'
+    },
+    coldDrink: {
+      title: 'Nos Boissons Froides 🧊',
+      coke: 'Coca-cola 33cl',
+      cokeZero: 'Coca-cola zéro 33cl',
+      cockeCherry: 'Coca-cola cherry 33cl',
+      sprite: 'Sprite 33cl',
+      tropico: 'Tropico 33cl',
+      orangina: 'Orangina 25cl',
+      fanta: 'Fanta Orange 33cl',
+      fuze: 'Fuze Tea pêche 25l',
+      oasis: 'Oasis Tropical 25cl',
+      shweppes: 'Schweppes Agrumes 25cl',
+      perrier: 'Perrier 33cl',
+      pellegrino: 'San Pellegrino 50cl',
+      bigPellegrino: 'San Pellegrino 100cl',
+      evian: 'Evian 50cl',
+      bigEvian: 'Evian 100cl',
+      limonade: 'Limonade 25cl',
+    },
+    hotDrink: {
+      title: 'Nos Boissons Chaudes ☕',
+      expresso: 'Café expresso',
+      noisette: 'Café noisette',
+      long: 'Café allongé',
+      deca: 'Décaféiné expresso',
+      deca2: 'Décaféiné allongé',
+      chocolate: 'Chocolat chaud',
+      the: 'Thé infusions',
+      cafeMiam: 'Café gourmand (trois mignardises)',
+      theMiam: 'Thé gourmand (trois mignardises)',
+    },
+    cocktails: {
+      title: 'Nos Cocktails 🍹',
+      boussole: 'Tranche d’ananas, sirop de pèche, tranche de mangue, sucre de canne et limonade',
+      virgin: 'Gousse de menthe, citron vert, sucre de canne et limonade',
+      iceland: 'Fraise, feuille de menthe, sucre de canne et limonade',
+      pinacolada: 'Ananas, lait de coco, sucre de canne, crème de coco et glaçon',
+      borabora: 'Passion, ananas, citron et sirop de fraise',
+      love: 'Litchi, passion et sucre de canne',
+      yellow: 'Passion, citron pressé et limonade au citron'
+    }
   }
 }

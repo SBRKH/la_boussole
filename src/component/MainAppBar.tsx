@@ -133,7 +133,7 @@ const DesktopMenu: React.FC<any> = (props) => {
       <Button className={classes.buttonTitle} onClick={handleClickMenu}>{i18n.t('menu.menu')}</Button>
       <Menu anchorEl={seeMenu} keepMounted open={Boolean(seeMenu)} onClose={handleCloseMenu}>
         <MenuItem onClick={handleClickMenuRestaurant}>{i18n.t('menu.restaurant')}</MenuItem>
-        <MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>
+        {/*<MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>*/}
       </Menu>
 
       <MenuItem className={classes.buttonTitle} onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>
@@ -251,7 +251,7 @@ const MobileMenu: React.FC<any> = (props) => {
         <MenuItem onClick={handleClickHome}>{i18n.t('menu.home')}</MenuItem>
         <MenuItem onClick={handleClickHistory}>{i18n.t('menu.history')}</MenuItem>
         <MenuItem onClick={handleClickMenuRestaurant}>{i18n.t('menu.restaurant')}</MenuItem>
-        <MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>
+        {/*<MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>*/}
         <MenuItem onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>
         <MenuItem onClick={handleClickEvent}>{i18n.t('menu.events')}</MenuItem>
         <MenuItem onClick={handleClickPhotos}>{i18n.t('menu.photos')}</MenuItem>

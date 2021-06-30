@@ -5,7 +5,6 @@ import {createMuiTheme, MuiThemeProvider} from "@material-ui/core";
 import {Main} from "./component/Main";
 import DateFnsUtils from "@date-io/date-fns";
 import {MuiPickersUtilsProvider} from "@material-ui/pickers";
-import "moment/locale/fr";
 import {fr} from "date-fns/locale";
 
 const muiTheme = createMuiTheme({

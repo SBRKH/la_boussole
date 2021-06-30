@@ -40,7 +40,7 @@ export const MainRoute: React.FC = () => {
         <Route path={"/contact"} component={Contact} />
         <Route path={"/history"} component={History} />
         <Route path={"/food/restaurant"} component={Restaurant} />
-        <Route path={"/food/pizzeria"} component={Pizzeria} />
+        {/*<Route path={"/food/pizzeria"} component={Pizzeria} />*/}
         <Route path={"/brunch"} component={Brunch} />
         <Route path={"/rooms"} component={() => <Typography>Contact</Typography>} />
         <Route path={"/events"} component={Event} />

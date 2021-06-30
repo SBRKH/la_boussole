@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import {Button, Grid, makeStyles, Typography} from "@material-ui/core";
 import {Form} from "react-final-form";
-import {makeValidate, TextField, DatePicker, TimePicker} from 'mui-rff';
+import {DatePicker, makeValidate, TextField, TimePicker} from 'mui-rff';
 import i18n from "../i18n/i18nconfig";
 import * as Yup from 'yup';
-import DateFnsUtils from '@date-io/date-fns';
+import {send} from "emailjs-com";
+import {Success} from "../core/Success";
+import {Error} from "../core/Error";
+import {format} from "date-fns";
+import {fr} from "date-fns/locale";
 
 const useStyle = makeStyles({
   title: {
@@ -29,10 +33,31 @@ const formValidatorSchema = Yup.object().shape({
 
 export const Event: React.FC = () => {
   const classes = useStyle();
+  const [openSuccess, setOpenSuccess] = useState<boolean>(false);
+  const [openError, setOpenError] = useState<boolean>(false);
   const validate = makeValidate(formValidatorSchema);
 
   function handleOnSubmit(values: any) {
+    const data = {
+      name: values.name + " " + values.firstname,
+      people: values.numberGuests,
+      message: values.content,
+      date: format(values.date, 'dd/MM/yyyy'),
+      hours: format(values.time, 'HH:mm'),
+      email: values.email,
+      phone: values.phone,
+    }
 
+    send("service_mkaw9i8", "template_6gd126c", data, "user_uxZQ12PsVSe8CPIEWxbVs").then(
+      (response) => {
+        setOpenSuccess(true);
+        console.log(response.status, response.text);
+      },
+      (err) => {
+        setOpenError(true);
+        console.log(err);
+      }
+    );
   }
 
   return (
@@ -75,10 +100,10 @@ export const Event: React.FC = () => {
                       </Grid>
                       <Grid item xs={6}>
                         <DatePicker
+                          locale={fr}
                           label={"Date de réservation"}
                           name={"date"}
                           required={true}
-                          dateFunsUtils={DateFnsUtils}
                           margin={"normal"}
                           variant={"inline"}
                           inputVariant={"outlined"}
@@ -87,10 +112,11 @@ export const Event: React.FC = () => {
                       </Grid>
                       <Grid item xs={6}>
                         <TimePicker
+                          locale={fr}
+                          ampm={false}
                           label={"Heure de réservation"}
                           name={"time"}
                           required={true}
-                          dateFunsUtils={DateFnsUtils}
                           margin={"normal"}
                           variant={"inline"}
                           inputVariant={"outlined"}
@@ -139,6 +165,9 @@ export const Event: React.FC = () => {
                   width="400" height="300" style={{border: 0}} allowFullScreen={true} loading={"lazy"}/>
         </Grid>
       </Grid>
+      <Success open={openSuccess} onClose={() => setOpenSuccess(false)}
+               message={"Votre demande de réservation a bien été envoyé!"}/>
+      <Error open={openError} onClose={() => setOpenError(false)} message={"Une erreur est survenue..."}/>
     </>
   );
 }

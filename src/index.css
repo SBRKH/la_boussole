@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'noto';
+  src: local('noto'), url(./fonts/noto.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
 * {
   margin:0;
   padding:0;

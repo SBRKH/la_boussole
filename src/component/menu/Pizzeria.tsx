@@ -58,7 +58,7 @@ export const Pizzeria: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"15€"}
+                              secondary={"15,00€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -79,7 +79,7 @@ export const Pizzeria: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"14€"}
+                              secondary={"14,00€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -90,7 +90,7 @@ export const Pizzeria: React.FC = () => {
                 <ListItemText primary={
                   <ListItemText
                     primary={"SALMONE"}
-                    secondary={"Crème fraiche, saumon fumée, mozzarella, parmesan, aneth"}
+                    secondary={"Crème fraiche, saumon fumé, mozzarella, parmesan, aneth"}
                     secondaryTypographyProps={{
                       color: "secondary",
                       align: "center"
@@ -142,7 +142,7 @@ export const Pizzeria: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"13€"}
+                              secondary={"13,00€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -163,7 +163,7 @@ export const Pizzeria: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"13€"}
+                              secondary={"13,00€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -349,22 +349,10 @@ export const Pizzeria: React.FC = () => {
 
         <Accordion className={classes.accordion}>
           <AccordionSummary expandIcon={<ExpandMoreIcon color={"primary"}/>}>
-            <Typography align={"center"} className={classes.heading}>Les Desserts 🍰</Typography>
+            <Typography align={"center"} className={classes.heading}>Nos Desserts 🍰</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <List className={classes.listContent}>
-              <ListItem>
-                <ListItemText primary={"Tarte au citron"}
-                              primaryTypographyProps={{
-                                align: "center"
-                              }}
-                              secondary={"6,50€"}
-                              secondaryTypographyProps={{
-                                color: "secondary",
-                                align: "center"
-                              }}/>
-              </ListItem>
-
               <ListItem>
                 <ListItemText primary={"Fondant au chocolat, glace vanille"}
                               primaryTypographyProps={{
@@ -454,7 +442,7 @@ export const Pizzeria: React.FC = () => {
 
         <Accordion className={classes.accordion}>
           <AccordionSummary expandIcon={<ExpandMoreIcon color={"primary"}/>}>
-            <Typography align={"center"} className={classes.heading}>Les Glaces 🍨</Typography>
+            <Typography align={"center"} className={classes.heading}>Nos Glaces 🍨</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <List className={classes.listContent}>
@@ -522,7 +510,7 @@ export const Pizzeria: React.FC = () => {
 
         <Accordion className={classes.accordion}>
           <AccordionSummary expandIcon={<ExpandMoreIcon color={"primary"}/>}>
-            <Typography align={"center"} className={classes.heading}>Les Boissons Froides 🧊</Typography>
+            <Typography align={"center"} className={classes.heading}>Nos Boissons Froides 🧊</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <List className={classes.listContent}>
@@ -719,7 +707,7 @@ export const Pizzeria: React.FC = () => {
 
         <Accordion className={classes.accordion}>
           <AccordionSummary expandIcon={<ExpandMoreIcon color={"primary"}/>}>
-            <Typography align={"center"} className={classes.heading}>Les Boissons Chaudes ☕️</Typography>
+            <Typography align={"center"} className={classes.heading}>Nos Boissons Chaudes ☕️</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <List className={classes.listContent}>
@@ -833,6 +821,163 @@ export const Pizzeria: React.FC = () => {
             </List>
           </AccordionDetails>
         </Accordion>
+
+        <Accordion className={classes.accordion}>
+          <AccordionSummary expandIcon={<ExpandMoreIcon color={"primary"}/>}>
+            <Typography align={"center"} className={classes.heading}>Nos Cocktails 🍹</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <List className={classes.listContent}>
+              <ListItem>
+                <ListItemText primary={"La Boussole"}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}
+                              secondary={
+                                <List>
+                                  <ListItem><ListItemText primary={"Tranche d’ananas, sirop de pèche, tranche de mangue, sucre de canne et limonade"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"7,50€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                </List>
+                              }
+                              secondaryTypographyProps={{
+                                color: "secondary",
+                                align: "center"
+                              }}/>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText primary={"Virgin Mojito"}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}
+                              secondary={
+                                <List>
+                                  <ListItem><ListItemText primary={"Gousse de menthe, citron vert, sucre de canne et limonade"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"7,50€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                </List>
+                              }
+                              secondaryTypographyProps={{
+                                color: "secondary",
+                                align: "center"
+                              }}/>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText primary={"Iceland"}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}
+                              secondary={
+                                <List>
+                                  <ListItem><ListItemText primary={"Fraise, feuille de menthe, sucre de canne et limonade"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"7,50€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                </List>
+                              }
+                              secondaryTypographyProps={{
+                                color: "secondary",
+                                align: "center"
+                              }}/>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText primary={"Pina Colada Virgin"}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}
+                              secondary={
+                                <List>
+                                  <ListItem><ListItemText primary={"Ananas, lait de coco, sucre de canne, crème de coco et glaçon"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"7,50€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                </List>
+                              }
+                              secondaryTypographyProps={{
+                                color: "secondary",
+                                align: "center"
+                              }}/>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText primary={"Bora Bora"}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}
+                              secondary={
+                                <List>
+                                  <ListItem><ListItemText primary={"Passion, ananas, citron et sirop de fraise"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"7,50€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                </List>
+                              }
+                              secondaryTypographyProps={{
+                                color: "secondary",
+                                align: "center"
+                              }}/>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText primary={"Love Passion"}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}
+                              secondary={
+                                <List>
+                                  <ListItem><ListItemText primary={"Litchi, passion et sucre de canne"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"7,50€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                </List>
+                              }
+                              secondaryTypographyProps={{
+                                color: "secondary",
+                                align: "center"
+                              }}/>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText primary={"Yellow Bear"}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}
+                              secondary={
+                                <List>
+                                  <ListItem><ListItemText primary={"Passion, citron pressé et limonade au citron"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                  <ListItem><ListItemText primary={"7,50€"} primaryTypographyProps={{
+                                    align: "center"
+                                  }}/></ListItem>
+                                </List>
+                              }
+                              secondaryTypographyProps={{
+                                color: "secondary",
+                                align: "center"
+                              }}/>
+              </ListItem>
+            </List>
+          </AccordionDetails>
+        </Accordion>
+
       </Grid>
     </Grid>
   );

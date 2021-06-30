@@ -1,5 +1,5 @@
 import React from "react";
-import {GridList, GridListTile, makeStyles} from "@material-ui/core";
+import {makeStyles} from "@material-ui/core";
 import image from '../../static/book/Photo 1.png';
 import image2 from '../../static/book/Photo 2.png';
 import image3 from '../../static/book/Photo 3.png';
@@ -9,6 +9,8 @@ import image6 from '../../static/book/Photo 6.png';
 import image7 from '../../static/book/Photo 7.png';
 import image8 from '../../static/book/Photo 8.png';
 import image9 from '../../static/book/Photo 9.png';
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,8 +21,10 @@ const useStyles = makeStyles((theme) => ({
     //backgroundColor: theme.palette.background.paper,
   },
   gridList: {
-    width: "80wh",
-    height: "80vh",
+    flexWrap: 'nowrap',
+    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+    transform: 'translateZ(0)',
+    overflow: "scroll"
   },
 }));
 
@@ -86,13 +90,11 @@ export const Photos: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={350} className={classes.gridList} cols={5}>
+      <Carousel plugins={['arrows']}>
         {tileData.map((tile) => (
-          <GridListTile key={tile.img} cols={tile.cols || 1}>
-            <img src={tile.img} alt={tile.title} />
-          </GridListTile>
+          <img src={tile.img} alt={tile.title} width={"100%"}/>
         ))}
-      </GridList>
+      </Carousel>
     </div>
   );
 }

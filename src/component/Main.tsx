@@ -2,7 +2,7 @@ import React from "react";
 import {makeStyles, Paper} from "@material-ui/core";
 import {MainAppBar} from "./MainAppBar";
 import {MainRoute} from "./MainRoute";
-import backgroundImage from "../static/bg4.png";
+import backgroundImage from "../static/bg5.png";
 import {MainFooter} from "./MainFooter";
 
 const useStyle = makeStyles(theme => {
