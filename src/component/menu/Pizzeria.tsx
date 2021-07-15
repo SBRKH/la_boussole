@@ -892,7 +892,7 @@ export const Pizzeria: React.FC = () => {
               </ListItem>
 
               <ListItem>
-                <ListItemText primary={"Pina Colada Virgin"}
+                <ListItemText primary={"Virgin Colada"}
                               primaryTypographyProps={{
                                 align: "center"
                               }}

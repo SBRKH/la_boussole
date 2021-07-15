@@ -107,6 +107,18 @@ export const Restaurant: React.FC = () => {
                                 align: "center"
                               }}/>
               </ListItem>
+
+              <ListItem>
+                <ListItemText primary={"Carpaccio de tomates exotique"}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}
+                              secondary={"12,50€"}
+                              secondaryTypographyProps={{
+                                color: "secondary",
+                                align: "center"
+                              }}/>
+              </ListItem>
             </List>
           </AccordionDetails>
         </Accordion>
@@ -141,17 +153,6 @@ export const Restaurant: React.FC = () => {
                               }}/>
               </ListItem>
 
-              <ListItem>
-                <ListItemText primary={"Salade niçoise"}
-                              primaryTypographyProps={{
-                                align: "center"
-                              }}
-                              secondary={"12,90€"}
-                              secondaryTypographyProps={{
-                                color: "secondary",
-                                align: "center"
-                              }}/>
-              </ListItem>
             </List>
           </AccordionDetails>
         </Accordion>
@@ -173,18 +174,6 @@ export const Restaurant: React.FC = () => {
                     color: "secondary",
                     align: "center"
                   }}/>
-              </ListItem>
-
-              <ListItem>
-                <ListItemText primary={"Côtelettes d'agneau risotto d'asperge jus d'agneau"}
-                              primaryTypographyProps={{
-                                align: "center"
-                              }}
-                              secondary={"24,90€"}
-                              secondaryTypographyProps={{
-                                color: "secondary",
-                                align: "center"
-                              }}/>
               </ListItem>
 
               <ListItem>
@@ -290,6 +279,18 @@ export const Restaurant: React.FC = () => {
                                 align: "center"
                               }}
                               secondary={"21,90€"}
+                              secondaryTypographyProps={{
+                                color: "secondary",
+                                align: "center"
+                              }}/>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText primary={"Fondant de bœuf, purée de pomme de terre, jus de bœuf"}
+                              primaryTypographyProps={{
+                                align: "center"
+                              }}
+                              secondary={"22,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -1137,7 +1138,7 @@ export const Restaurant: React.FC = () => {
               </ListItem>
 
               <ListItem>
-                <ListItemText primary={"Pina Colada Virgin"}
+                <ListItemText primary={"Virgin Colada"}
                               primaryTypographyProps={{
                                 align: "center"
                               }}
