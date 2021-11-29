@@ -59,7 +59,7 @@ export const MainFooter: React.FC = () => {
             Ouvert du Mardi au Samedi de 11h45 à 14h30 et de 18h45 à 22h30
           </Typography>
           <Typography color={"secondary"}>
-            Le Dimanche de 11h à 16h (Brunch) et de 19h à 22h00 (Restaurant)
+            Le Dimanche de 11h à 15h (Brunch)
           </Typography>
         </Grid>
         <Grid item xs={3}>

@@ -822,7 +822,7 @@ export const Pizzeria: React.FC = () => {
           </AccordionDetails>
         </Accordion>
 
-        <Accordion className={classes.accordion}>
+        {/*<Accordion className={classes.accordion}>
           <AccordionSummary expandIcon={<ExpandMoreIcon color={"primary"}/>}>
             <Typography align={"center"} className={classes.heading}>Nos Cocktails 🍹</Typography>
           </AccordionSummary>
@@ -976,7 +976,7 @@ export const Pizzeria: React.FC = () => {
               </ListItem>
             </List>
           </AccordionDetails>
-        </Accordion>
+        </Accordion>*/}
 
       </Grid>
     </Grid>
