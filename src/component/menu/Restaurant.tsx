@@ -49,11 +49,11 @@ export const Restaurant: React.FC = () => {
           <AccordionDetails>
             <List className={classes.listContent}>
               <ListItem>
-                <ListItemText primary={"Burrata, tomate cœur de bœuf"}
+                <ListItemText primary={"Burrata à la truffe, tomate cœur de bœuf"}
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"12,50€"}
+                              secondary={"14,00€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -65,7 +65,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"11,50€"}
+                              secondary={"13,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -77,7 +77,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"12,50€"}
+                              secondary={"13,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -89,7 +89,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"12,50€"}
+                              secondary={"14,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -101,7 +101,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"12,50€"}
+                              secondary={"14,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -113,7 +113,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"12,50€"}
+                              secondary={"13,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -134,7 +134,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"11,90€"}
+                              secondary={"12,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -146,7 +146,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"12,90€"}
+                              secondary={"13,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -169,7 +169,7 @@ export const Restaurant: React.FC = () => {
                   primaryTypographyProps={{
                     align: "center"
                   }}
-                  secondary={"18,90€"}
+                  secondary={"22,50€"}
                   secondaryTypographyProps={{
                     color: "secondary",
                     align: "center"
@@ -181,7 +181,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"26,90€"}
+                              secondary={"29,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -193,7 +193,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"24,50€"}
+                              secondary={"28,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -205,7 +205,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"22,90€"}
+                              secondary={"26,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -217,7 +217,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"23,90€"}
+                              secondary={"27,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -254,7 +254,7 @@ export const Restaurant: React.FC = () => {
                   primaryTypographyProps={{
                     align: "center"
                   }}
-                  secondary={"23,90€"}
+                  secondary={"26,50€"}
                   secondaryTypographyProps={{
                     color: "secondary",
                     align: "center"
@@ -262,11 +262,11 @@ export const Restaurant: React.FC = () => {
               </ListItem>
 
               <ListItem>
-                <ListItemText primary={"Souris d'agneau, gratin dauphinois, sauce au jus de viande"}
+                <ListItemText primary={"Souris d'agneau (cuisson pendant 5h) accompagné de son gratin dauphinois et de son jus de viande"}
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"27,90€"}
+                              secondary={"29,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -278,7 +278,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"22,90€"}
+                              secondary={"24,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -286,11 +286,11 @@ export const Restaurant: React.FC = () => {
               </ListItem>
 
               <ListItem>
-                <ListItemText primary={"Fondant de bœuf, purée de pomme de terre, jus de bœuf"}
+                <ListItemText primary={"Fondant de bœuf (cuisson pendant 13h) accompagné d'une purée de pomme de terre et de son jus de boeuf"}
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"23,90€"}
+                              secondary={"28,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -386,7 +386,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"23,90€"}
+                              secondary={"25,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -398,7 +398,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"22,90€"}
+                              secondary={"25,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -410,7 +410,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"49,90€"}
+                              secondary={"56,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -422,7 +422,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"23,90€"}
+                              secondary={"25,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -434,7 +434,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"23,90€"}
+                              secondary={"25,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -566,7 +566,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"10,90€"}
+                              secondary={"12,90€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -587,7 +587,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"7,50€"}
+                              secondary={"9,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -647,7 +647,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"7,50€"}
+                              secondary={"9,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -1034,7 +1034,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"8,90€"}
+                              secondary={"10,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -1046,7 +1046,7 @@ export const Restaurant: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"8,90€"}
+                              secondary={"10,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"

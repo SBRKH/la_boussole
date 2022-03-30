@@ -65,7 +65,7 @@ export const translationFr = {
     name: 'La Boussole',
     bistro: "Restaurant Bistronomique",
     openWeekly: 'Ouvert du Mardi au Samedi de 11h45 à 14h30 et de 18h45 à 22h30',
-    openweekend: 'Le Dimanche de 11h à 16h (Brunch) et de 19h à 22h00 (Restaurant)',
+    openweekend: 'Le Dimanche de 19h à 22h00',
     phone: '04 50 31 18 10',
     address: '11 Rue René Cassin, 74240 Gaillard',
     copyright: '© 2021 La Boussole Tous droits réservés',

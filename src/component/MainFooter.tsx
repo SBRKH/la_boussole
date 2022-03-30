@@ -52,14 +52,11 @@ export const MainFooter: React.FC = () => {
       <Grid spacing={4} container className={classes.main}>
         <Grid item xs={3}>
           <Typography color={"secondary"} align={"center"}>La Boussole</Typography>
-          <Typography color={"secondary"} align={"center"}>Restaurant Bistronomique</Typography>
+          <Typography color={"secondary"} align={"center"}>Restaurant Bistronomique Fait Maison</Typography>
         </Grid>
         <Grid item xs={6}>
           <Typography color={"secondary"}>
             Ouvert du Mardi au Samedi de 11h45 à 14h30 et de 18h45 à 22h30
-          </Typography>
-          <Typography color={"secondary"}>
-            Le Dimanche de 11h à 15h (Brunch)
           </Typography>
         </Grid>
         <Grid item xs={3}>

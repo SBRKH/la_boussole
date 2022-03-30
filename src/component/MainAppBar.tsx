@@ -100,9 +100,9 @@ const DesktopMenu: React.FC<any> = (props) => {
     history.push("/food/pizzeria");
   }
 
-  function handleClickBrunch() {
+  /*function handleClickBrunch() {
     history.push("/brunch");
-  }
+  }*/
 
   function handleClickEvent() {
     history.push("/events");
@@ -133,10 +133,10 @@ const DesktopMenu: React.FC<any> = (props) => {
       <Button className={classes.buttonTitle} onClick={handleClickMenu}>{i18n.t('menu.menu')}</Button>
       <Menu anchorEl={seeMenu} keepMounted open={Boolean(seeMenu)} onClose={handleCloseMenu}>
         <MenuItem onClick={handleClickMenuRestaurant}>{i18n.t('menu.restaurant')}</MenuItem>
-        {/*<MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>*/}
+        <MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>
       </Menu>
 
-      <MenuItem className={classes.buttonTitle} onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>
+      {/*<MenuItem className={classes.buttonTitle} onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>*/}
       <MenuItem className={classes.buttonTitle} onClick={handleClickEvent}>{i18n.t('menu.events')}</MenuItem>
 
       <Button className={classes.buttonTitle} onClick={handleClickGoldenkMenu}>{i18n.t('menu.guestBook')}</Button>
@@ -214,9 +214,9 @@ const MobileMenu: React.FC<any> = (props) => {
     history.push("/food/pizzeria");
   }
 
-  function handleClickBrunch() {
+  /*function handleClickBrunch() {
     history.push("/brunch");
-  }
+  }*/
 
   function handleClickEvent() {
     history.push("/events");
@@ -252,7 +252,7 @@ const MobileMenu: React.FC<any> = (props) => {
         <MenuItem onClick={handleClickHistory}>{i18n.t('menu.history')}</MenuItem>
         <MenuItem onClick={handleClickMenuRestaurant}>{i18n.t('menu.restaurant')}</MenuItem>
         {/*<MenuItem onClick={handleClickMenuPizzeria}>{i18n.t('menu.pizzeria')}</MenuItem>*/}
-        <MenuItem onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>
+        {/*<MenuItem onClick={handleClickBrunch}>{i18n.t('menu.brunchs')}</MenuItem>*/}
         <MenuItem onClick={handleClickEvent}>{i18n.t('menu.events')}</MenuItem>
         <MenuItem onClick={handleClickPhotos}>{i18n.t('menu.photos')}</MenuItem>
         <MenuItem onClick={handleClickVideos}>{i18n.t('menu.videos')}</MenuItem>

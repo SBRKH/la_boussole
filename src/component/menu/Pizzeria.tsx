@@ -48,26 +48,6 @@ export const Pizzeria: React.FC = () => {
               <ListItem>
                 <ListItemText primary={
                   <ListItemText
-                    primary={"TARTUFO"}
-                    secondary={"Crème fraiche, truffe, roquette, mozzarella, huile à la truffe"}
-                    secondaryTypographyProps={{
-                      color: "secondary",
-                      align: "center"
-                    }}
-                  />}
-                              primaryTypographyProps={{
-                                align: "center"
-                              }}
-                              secondary={"15,00€"}
-                              secondaryTypographyProps={{
-                                color: "secondary",
-                                align: "center"
-                              }}/>
-              </ListItem>
-
-              <ListItem>
-                <ListItemText primary={
-                  <ListItemText
                     primary={"SAVOYARD"}
                     secondary={"Crème fraiche, mozzarella, lardons, tartiflette, pomme de terre"}
                     secondaryTypographyProps={{
@@ -181,19 +161,6 @@ export const Pizzeria: React.FC = () => {
                                 align: "center"
                               }}/>
               </ListItem>
-
-              <ListItem>
-                <ListItemText primary={"TRUFFE"}
-                              primaryTypographyProps={{
-                                align: "center"
-                              }}
-                              secondary={"5,00€"}
-                              secondaryTypographyProps={{
-                                color: "secondary",
-                                align: "center"
-                              }}/>
-              </ListItem>
-
             </List>
           </AccordionDetails>
         </Accordion>
@@ -328,7 +295,7 @@ export const Pizzeria: React.FC = () => {
                 <ListItemText primary={
                   <ListItemText
                     primary={"CHÈVRE-MIEL"}
-                    secondary={"Mozzarella, chèvre, noix, miel, tomate cerise, herbes de provence"}
+                    secondary={"Mozzarella, chèvre, miel, tomate cerise, herbes de provence"}
                     secondaryTypographyProps={{
                       color: "secondary",
                       align: "center"
@@ -358,7 +325,7 @@ export const Pizzeria: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"7,50€"}
+                              secondary={"9,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -418,7 +385,7 @@ export const Pizzeria: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"7,50€"}
+                              secondary={"9,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -800,7 +767,7 @@ export const Pizzeria: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"8,90€"}
+                              secondary={"10,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
@@ -812,7 +779,7 @@ export const Pizzeria: React.FC = () => {
                               primaryTypographyProps={{
                                 align: "center"
                               }}
-                              secondary={"8,90€"}
+                              secondary={"10,50€"}
                               secondaryTypographyProps={{
                                 color: "secondary",
                                 align: "center"
